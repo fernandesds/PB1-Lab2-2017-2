@@ -1,0 +1,58 @@
+﻿@model ProvaAvaliativaLab2.Models.Sessao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sessao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataHoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataHoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataHoraFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataHoraFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorInteira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorInteira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorMeia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorMeia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Encerrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Encerrada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SessaoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
